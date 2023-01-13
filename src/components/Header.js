@@ -17,8 +17,8 @@ export default function Header(props) {
     async function handleLogOut() {
         try {
             await fetch("https://bookstore-backend.cyclic.app/logout", {credentials: 'include'})
-            navigate('/')
-            window.location.reload()  
+            // navigate('/')
+            // window.location.reload()  
 
         } catch(err) {
             console.log(err)
